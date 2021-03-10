@@ -13,7 +13,7 @@ const Poster = (props) => {
             src={[props.posterImg]}
             fluid
             alt=""
-            style={{ width: "300px", height: "auto" }}
+            style={{ width: "200px", height: "auto" }}
           />
         </Col>
       </Row>
