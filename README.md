@@ -1,7 +1,7 @@
 ###Website Name: EPL-English Premier Legue
 
 ###Site link
-https://epl303.netlify.app/
+https://epl303.netlify.app
 
 ###Description
 
