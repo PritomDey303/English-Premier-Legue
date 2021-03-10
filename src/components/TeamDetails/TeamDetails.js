@@ -90,13 +90,13 @@ const TeamDetails = () => {
         </Row>
         <Row className="mt-3">
           <Col className="text-center">
-            <a href="https://www.twitter.com" target="_blank">
+            <a href="https://www.twitter.com">
               <span className="icons bg-primary">{twitter}</span>
             </a>
-            <a href="https://www.facebook.com" target="_blank">
+            <a href="https://www.facebook.com">
               <span className="icons ">{facebook}</span>
             </a>
-            <a href="https://www.youtube.com" target="_blank">
+            <a href="https://www.youtube.com">
               <span className="icons bg-danger">{youtube}</span>
             </a>
           </Col>
