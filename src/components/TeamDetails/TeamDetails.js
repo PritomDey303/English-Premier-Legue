@@ -38,8 +38,10 @@ const TeamDetails = () => {
   let img;
   if (strGender === "Male") {
     img = male;
-  } else {
+  } else if (strGender === "Female") {
     img = female;
+  } else {
+    img = "";
   }
 
   const facebook = <FontAwesomeIcon icon={["fab", "facebook-f"]} />;

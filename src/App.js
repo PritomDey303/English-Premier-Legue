@@ -10,14 +10,14 @@ function App() {
     <>
       <Router>
         <Switch>
-          <Route exact path="/">
-            <Main />
-          </Route>
           <Route path="/main">
             <Main />
           </Route>
           <Route path="/teamdetails/:teamId">
             <TeamDetails></TeamDetails>
+          </Route>
+          <Route exact path="/">
+            <Main />
           </Route>
           <Route path="*">
             <NotFound></NotFound>
