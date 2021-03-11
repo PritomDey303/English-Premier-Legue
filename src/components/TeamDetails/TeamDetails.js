@@ -39,7 +39,6 @@ const TeamDetails = () => {
     strYoutube,
   } = Team;
 
-  const twitterLink = "https://" + strTwitter;
   const linkConcator = (link) => {
     return "https://" + link;
   };
