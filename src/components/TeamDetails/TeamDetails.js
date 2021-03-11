@@ -34,8 +34,15 @@ const TeamDetails = () => {
     intFormedYear,
     strTeamBadge,
     strStadiumThumb,
+    strFacebook,
+    strTwitter,
+    strYoutube,
   } = Team;
 
+  const twitterLink = "https://" + strTwitter;
+  const linkConcator = (link) => {
+    return "https://" + link;
+  };
   let img;
   switch (strGender) {
     case "Male":
@@ -101,13 +108,13 @@ const TeamDetails = () => {
         </Row>
         <Row className="mt-3">
           <Col className="text-center">
-            <a href="https://www.twitter.com">
+            <a href={linkConcator(strTwitter)}>
               <span className="icons bg-primary">{twitter}</span>
             </a>
-            <a href="https://www.facebook.com">
+            <a href={linkConcator(strFacebook)}>
               <span className="icons ">{facebook}</span>
             </a>
-            <a href="https://www.youtube.com">
+            <a href={linkConcator(strYoutube)}>
               <span className="icons bg-danger">{youtube}</span>
             </a>
           </Col>
