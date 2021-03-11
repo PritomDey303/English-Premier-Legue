@@ -8,8 +8,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 import { Col, Container, Image, Row } from "react-bootstrap";
 import { useParams } from "react-router";
-import female from "../../photo/female.png";
-import male from "../../photo/male.png";
+import femaleImg from "../../photo/female.png";
+import maleImg from "../../photo/male.png";
 import Poster from "../Main/Poster/Poster";
 import "./TeamDetails.css";
 
@@ -33,15 +33,19 @@ const TeamDetails = () => {
     strCountry,
     intFormedYear,
     strTeamBadge,
+    strStadiumThumb,
   } = Team;
 
   let img;
-  if (strGender === "Male") {
-    img = male;
-  } else if (strGender === "Female") {
-    img = female;
-  } else {
-    img = "";
+  switch (strGender) {
+    case "Male":
+      img = maleImg;
+      break;
+    case "Female":
+      img = femaleImg;
+      break;
+    default:
+      img = "";
   }
 
   const facebook = <FontAwesomeIcon icon={["fab", "facebook-f"]} />;
@@ -51,10 +55,15 @@ const TeamDetails = () => {
   const flag = <FontAwesomeIcon icon={faFlag} />;
   const football = <FontAwesomeIcon icon={faFutbol} />;
   const gender = <FontAwesomeIcon icon={faMars} />;
-
+  console.log(Team);
   return (
     <div className="bg-dark">
-      <Poster posterImg={strTeamBadge} title={""} imgAlt={strTeam}></Poster>
+      <Poster
+        posterImg={strTeamBadge}
+        posterBg={strStadiumThumb}
+        title={""}
+        imgAlt={strTeam}
+      ></Poster>
       <Container className="py-4">
         <Row>
           <Col

@@ -1,18 +1,12 @@
 .poster {
   position: relative;
-  background: linear-gradient(rgba(255, 5, 5, 0.3), rgba(255, 5, 5, 0.2)),
-    url("https://cdn.wallpapersafari.com/26/90/duwxnD.jpg");
-
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 50vh;
+  height: 60vh;
 }
 .poster-title {
-  color: #fff;
+  color: #c4001d;
   font-size: 40px;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 700;
   position: absolute;
   top: 50%;
   left: 50%;

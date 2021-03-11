@@ -13,10 +13,15 @@ const Main = () => {
       .then((data) => setClubs(data.teams));
   }, []);
   const posterTitle = "English Premier Legue";
-  //console.log(Clubs[5]?.idTeam);
+  const posterBanner = "https://wallpapercave.com/wp/wp1830649.jpg";
   return (
     <Container fluid className="main">
-      <Poster title={posterTitle} posterImg={""} imgAlt={""}></Poster>
+      <Poster
+        title={posterTitle}
+        posterBg={posterBanner}
+        posterImg={""}
+        imgAlt={""}
+      ></Poster>
       <Container>
         <Row className="mt-4">
           {Clubs.map((Club) => (
